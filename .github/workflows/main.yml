@@ -1,8 +1,6 @@
 name: CI
 
-on:
-  repository:
-    types: [created]
+on: [repository_dispatch]
 
 jobs:
   build:
