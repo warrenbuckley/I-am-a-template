@@ -1,6 +1,8 @@
 name: CI
 
-on: [push]
+on:
+  repository:
+    types: [created]
 
 jobs:
   build:
