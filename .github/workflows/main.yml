@@ -12,6 +12,9 @@ jobs:
     
     - name: Print ENV
       run: env
+      
+    - name: Display JSON payload contents
+      run: cat $GITHUB_EVENT_PATH
     
     - name: 'Find & Replace'
       uses: warrenbuckley/Token-Replace-Action@releases/v1
