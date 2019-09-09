@@ -10,6 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
+    - name: Print ENV
+      runs: env
+    
     - name: 'Find & Replace'
       uses: warrenbuckley/Token-Replace-Action@releases/v1
       with:
